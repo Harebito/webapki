@@ -1,0 +1,43 @@
+openssl s_client -starttls smtp -connect poczta.interia.pl:587
+
+EHLO <nazwa>
+
+
+AUTH LOGIN
+
+cGFzMjAxN0BpbnRlcmlhLnBsCg==
+
+UDRTSW5mMjAxNwo=
+
+
+MAIL FROM: "<pas2017@interia.pl>"
+
+
+RCPT TO: "<pasinf2017@interia.pl>"
+
+
+DATA
+
+From: "Twoje Imie" <pas2017@interia.pl>
+To: <pasinf2017@interia.pl>
+Subject: Temat wiadomosci - Zadanie ESMTP zalacznik
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="granica123"
+
+--granica123
+Content-Type: text/plain; charset=utf-8
+
+To jest glowna tresc maila. Ponizej znajduje sie zalacznik.
+
+--granica123
+Content-Type: text/plain; name="zalacznik.txt"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="zalacznik.txt"
+
+YmFqb2pham8gYmFqb2pham8K
+
+--granica123--
+.
+
+
+QUIT

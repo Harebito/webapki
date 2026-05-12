@@ -1,0 +1,39 @@
+openssl s_client -starttls smtp -connect poczta.interia.pl:587
+
+EHLO <nazwa>
+
+
+AUTH LOGIN
+
+cGFzMjAxN0BpbnRlcmlhLnBsCg==
+
+UDRTSW5mMjAxNwo=
+
+
+MAIL FROM: "<pas2017@interia.pl>"
+
+
+RCPT TO: "<pasinf2017@interia.pl>"
+
+RCPT TO: "<odbiorca1@example.com>"
+
+RCPT TO: "<odbiorca2@poczta.pl>"
+
+RCPT TO: "<odbiorca3@firma.com>"
+
+
+DATA
+
+From: "Twoje Imie" <pas2017@interia.pl>
+To: <pasing2017@interia.pl>, <odbiorca1@example.com>, <odbiorca2@poczta.pl>, <odbiorca3@firma.com>
+Subject: Temat wiadomosci - Zadanie ESMTP
+Content-Type: text/plain; charset=utf-8
+
+Tutaj zaczyna sie tresc wiadomosci. 
+
+Pozdrawiam,
+Twoje Imie
+.
+
+
+QUIT

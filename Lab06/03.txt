@@ -1,0 +1,30 @@
+openssl s_client -starttls smtp -connect poczta.interia.pl:587
+
+EHLO <nazwa>
+
+
+AUTH LOGIN
+
+cGFzMjAxN0BpbnRlcmlhLnBsCg==
+
+UDRTSW5mMjAxNwo=
+
+
+MAIL FROM: "<pas2017@interia.pl>"
+
+
+RCPT TO: "<pasinf2017@interia.pl>"
+
+
+DATA
+From: "Bill Gates" <bill.gates@microsoft.com>
+To: <pasinf2017@interia.pl>
+Subject: Przelew na Twoje konto
+
+Witaj, 
+Chciałbym przekazać Ci darowiznę w wysokości miliona dolarów. 
+Proszę o kontakt.
+.
+
+
+QUIT
