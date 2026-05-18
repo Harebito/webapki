@@ -1,0 +1,11 @@
+telnet pop3.interia.pl 110
+
+USER pas2017@interia.pl
+
+PASS P4SInf2017
+
+LIST
+
+RETR [numer]
+
+QUIT
